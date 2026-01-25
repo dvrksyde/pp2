@@ -12,4 +12,3 @@ for x in str:
     if x == "m":
         print(f"m is found at index {str.index(x)}")
         break
-print(f"The length of the string is {len(str)}")
