@@ -10,9 +10,6 @@ p = {"apple", "banana", "cherry"}
 l = frozenset({"apple", "banana", "cherry"})
 m = True
 n = b"Hello"
-q = bytearray(5)
-e = memoryview(bytes(5))
-k = None
 print(type(x))
 print(type(y))
 print(type(z))
