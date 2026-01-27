@@ -1,8 +1,8 @@
-x = "Hello World"	
+x = "Hello World"
 y = 20
-z = 20.5	
-d = 1j		
-s = ["apple", "banana", "cherry"]	
+z = 20.5
+d = 1j
+s = ["apple", "banana", "cherry"]
 u = ("apple", "banana", "cherry")
 o = range(6)
 f = {"name" : "John", "age" : 36}
@@ -20,7 +20,7 @@ print(type(d))
 print(type(s))
 print(type(u))
 print(type(o))
-print(type(f))                                                                  
+print(type(f))
 print(type(p))
 print(type(l))
 print(type(m))
