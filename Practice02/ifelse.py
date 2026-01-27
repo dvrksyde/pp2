@@ -11,7 +11,6 @@ elif x == 5:
     print("x == 5")
 else:
     print("x < 5")
-
 a = 10
 b = 5
 print("a > b") if a > b else print("b >= a")
