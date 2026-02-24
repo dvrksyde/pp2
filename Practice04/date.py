@@ -1,0 +1,16 @@
+from datetime import datetime, timedelta
+
+now = datetime.now()
+fd_before = now - timedelta(days=5)
+yesterday = now - timedelta(days=1)
+tomorrow = now + timedelta(days=1)
+no_micros = now.replace(microsecond=0)
+date1 = datetime(2025, 1, 1, 12, 0, 0)
+date2 = datetime(2025, 1, 2, 14, 30, 0)
+difr = abs((date2 - date1).total_seconds())
+# print("Today:", now)
+# print("5 days earlier:", fd_before))
+# print("Yesterday:", yesterday)
+# print("Tomorrow:", tomorrow)
+# print("Now without micros:", no_micros)
+# print("Difference in seconds:", int(difr))
