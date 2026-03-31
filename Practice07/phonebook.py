@@ -192,6 +192,21 @@ def delete_by_name():
     cur.close()
     conn.close()
 
+def show_by_order():
+    conn = connect()
+    if conn is None:
+        return
+
+    cur = conn.cursor()
+    cur.execute("""SELECT * FROM PhoneBook ORDER BY first_name DESC""")
+    conn.commit()
+    rows = cur.fetchall()
+    for row in rows:
+        print(f"ID: {row[0]}, Name: {row[1]}, Phone: {row[2]}")
+    print(f"{cur.rowcount} record(s) displayed.")
+    cur.close()
+    conn.close()
+
 def delete_by_phone():
     phone = input("Enter phone to delete: ")
 
@@ -211,9 +226,18 @@ def delete_by_phone():
     cur.close()
     conn.close()
 
+def delete_last():
+    conn = connect()
+    cur = conn.cursor()
+    cur.execute("""DELETE * FROM phonebook WHERE id = 2;""")
+    cur.commit()
+    print("Deleted succesfully!")
+    cur.close
+    conn.close()
 def menu():
     while True:
         print("\n===== PHONEBOOK MENU =====")
+        print("00. Show by Descending order")
         print("1. Create table")
         print("2. Insert contact from console")
         print("3. Insert contacts from CSV")
@@ -228,7 +252,9 @@ def menu():
 
         choice = input("Choose an option: ")
 
-        if choice == "1":
+        if choice == "00":
+            show_by_order()
+        elif choice == "1":
             create_table()
         elif choice == "2":
             insert_from_console()
