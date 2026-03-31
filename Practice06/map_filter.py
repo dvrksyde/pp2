@@ -2,11 +2,11 @@
 
 from functools import reduce
 
-numbers = [1, 2, 3, 4, 5]
+numbers = [11, 12, 31, 44, 15]
 
 # map
-squares = list(map(lambda x: x**2, numbers))
-print("Squares:", squares)
+strt = list(map(lambda x: str(x)[0]=="1", numbers)).count(True)
+print("Strt:", strt)
 
 # filter
 evens = list(filter(lambda x: x % 2 == 0, numbers))
