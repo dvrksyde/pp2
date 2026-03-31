@@ -248,6 +248,7 @@ def menu():
         print("8. Update contact phone")
         print("9. Delete contact by name")
         print("10. Delete contact by phone")
+        print("11. Delete last contact")
         print("0. Exit")
 
         choice = input("Choose an option: ")
@@ -274,6 +275,8 @@ def menu():
             delete_by_name()
         elif choice == "10":
             delete_by_phone()
+        elif choice == "11":
+            delete_last()
         elif choice == "0":
             print("Exiting...")
             break
