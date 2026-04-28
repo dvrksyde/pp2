@@ -1,1 +1,5 @@
-/.idea
+.idea
+.vscode
+__pycache__
+.ipynb_checkpoints
+.Programming Principles II syllabus.pdf
