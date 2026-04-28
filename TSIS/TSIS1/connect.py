@@ -9,7 +9,8 @@ def get_connection():
         conn = psycopg.connect(**DB_CONFIG)
         return conn
     except Exception as error:
-        print(f"Error: {error}")
+        safe_error = str(error).encode("ascii", "backslashreplace").decode("ascii")
+        print(f"Error: {safe_error}")
         return None
 
 def init_db():

@@ -1,5 +1,17 @@
 [
     {
+        "name": "Player1",
+        "score": 797,
+        "distance": 874,
+        "coins": 20
+    },
+    {
+        "name": "Player1",
+        "score": 578,
+        "distance": 838,
+        "coins": 12
+    },
+    {
         "name": "Admin",
         "score": 559,
         "distance": 980,
@@ -18,9 +30,21 @@
         "coins": 2
     },
     {
+        "name": "Player1",
+        "score": 118,
+        "distance": 222,
+        "coins": 2
+    },
+    {
         "name": "Admin",
         "score": 83,
         "distance": 213,
+        "coins": 0
+    },
+    {
+        "name": "Player1",
+        "score": 51,
+        "distance": 172,
         "coins": 0
     }
 ]
