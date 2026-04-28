@@ -4,7 +4,7 @@ import os
 DB_CONFIG = {
     "host": os.getenv("SNAKE_DB_HOST", "localhost"),
     "port": int(os.getenv("SNAKE_DB_PORT", "5432")),
-    "database": os.getenv("SNAKE_DB_NAME", "snake_game"),
+    "dbname": os.getenv("SNAKE_DB_NAME", "snake_game"),
     "user": os.getenv("SNAKE_DB_USER", "postgres"),
     "password": os.getenv("SNAKE_DB_PASSWORD", "postgres"),
 }

@@ -24,11 +24,11 @@ class Game:
         self.username = username
         self.settings = settings
         self.snake = Snake(settings.get('snake_color', (0, 255, 0)))
+        self.obstacles = []
+        self.powerup = None
         self.food = self.spawn_food()
         self.poison = self.spawn_food() if random.random() < 0.3 else None
-        self.powerup = None
         self.powerup_timer = 0
-        self.obstacles = []
         self.score = 0
         self.level = 1
         self.speed = FPS

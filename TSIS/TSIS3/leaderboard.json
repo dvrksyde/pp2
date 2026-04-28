@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "name": "Admin",
+        "score": 559,
+        "distance": 980,
+        "coins": 10
+    },
+    {
+        "name": "Admin",
+        "score": 185,
+        "distance": 340,
+        "coins": 3
+    },
+    {
+        "name": "Admin",
+        "score": 130,
+        "distance": 245,
+        "coins": 2
+    },
+    {
+        "name": "Admin",
+        "score": 83,
+        "distance": 213,
+        "coins": 0
+    }
+]
